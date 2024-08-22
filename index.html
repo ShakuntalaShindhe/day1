@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>JS Task</h4>
+</body>
+<script>
+    //1.Multiplication table 5 using for loop
+    let number = 5
+    for (let a = 1; a <= 10; a++) {
+        let output = number * a
+        console.log(number + ' ' + 'x' + ' ' + a + ' ' + '=' + ' ' + output)
+    }
+
+    console.log('========================')
+    //2.Sum of Even Numbers Between 1 and 50
+    let even = 50;
+    for (let i = 1; i <= 50; i++) {
+        if (i % 2 == 0) {
+            even = even + i;
+            console.log('even numbers are:', i)
+        }
+    }
+    console.log('The sum of even numbers from 1 to 50 are', even);
+
+    console.log('========================')
+
+    //3.Sum of Odd Numbers
+
+    let i = 1;
+    sum = 0;
+    while (i < 20) {
+        if (i % 3 == 0) {
+            console.log(' Odd Number' + i)
+            sum = sum + i
+        }
+        i++
+    }
+    console.log('sum of all odd numbers', sum)
+
+    console.log('========================')
+    //4.Factorial Calculation
+    let fact = 5
+    let factorial = 1
+    let k = 1
+    while (k <= 5) {
+        factorial = factorial * k;
+        k++
+    }
+    console.log('Factorial of a number is', factorial)
+
+    console.log('========================')
+
+    //Countdown Timer
+    for (let i = 2; i <= 20; i++) {
+
+        for (var j = 2; j < i; j++) {
+            if (i % j == 0) {
+                break;
+            }
+        }
+        if (i == j) {
+            console.log(i)
+        }
+    }
+
+</script>
+
+</html>
